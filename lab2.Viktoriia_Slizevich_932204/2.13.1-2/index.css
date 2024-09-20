@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-frame {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    background-color: turquoise;
+    border: 3px solid forestgreen;
+    margin: 10px auto;
+    display: flex;
+    padding: 0px;
+}
+
+.left-frame {
+    width: 25%;
+    background-color: bisque;
+    padding: 0;
+    overflow-y: auto;
+    height: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.right-frame {
+    width: 75%;
+    background-color: lightgray;
+    padding: auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+.right-frame p {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text-with-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-image {
+    float: right;
+    height: 420px;
+    width: 420px;
+}
+
+@media (max-width: 768px) {
+    .main-frame {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .left-frame {
+        width: 15%;
+        min-width: 150px;
+    }
+
+    .right-frame {
+        margin-top: 0;
+        margin-right: 0;
+        width: 85%;
+        min-width: 420px;
+    }
+    .right-image {
+        float: right;
+        height: 250px;
+        width: 250px;
+    }
+}
+   

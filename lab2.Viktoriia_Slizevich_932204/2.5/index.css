@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+.content {
+    display: flex;
+    margin: auto;
+    padding:auto;
+}
+.greenbox{
+    background-color: green;
+    width: 30%;
+    margin: auto;
+    font-size: 14px;
+    color: #ffffff;
+
+}
+.bluebox{
+    background: blue;
+    width: 45%;
+    height: 35%;
+    margin: auto;
+    padding: 35px;
+    margin-top: 2px;
+    color: #ffffff;
+    font-size: 14px;
+}
