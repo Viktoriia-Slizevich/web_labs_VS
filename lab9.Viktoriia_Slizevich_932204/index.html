@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+    <meta charset="utf-8">
+    <title>lab9</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="calc">
+            <div class="display">
+                <div class="displayHistory"></div>
+                <div class="displayActive"></div>
+            </div>
+            <div class="buttonsContainer">
+                <div class="button numberButton"> <button onclick="addNumber(7)">7</button></div>
+                <div class="button numberButton"> <button onclick="addNumber(8)">8</button></div>
+                <div class="button numberButton"> <button onclick="addNumber(9)">9</button></div>
+				
+                <div class="button"> <button onclick="applyOperation('/')">/</button></div>
+				
+                <div class="button"> <button onclick="clearDisplay()">C</button></div>
+				
+                <div class="button numberButton" > <button onclick="addNumber(4)">4</button></div>
+                <div class="button numberButton"> <button onclick="addNumber(5)">5</button></div>
+                <div class="button numberButton"> <button onclick="addNumber(6)">6</button></div>
+				
+                <div class="button"> <button onclick="applyOperation('*')">*</button></div>
+				
+                <div class="button"> <button onclick="back()"> <- </button></div>
+				
+                <div class="button numberButton"> <button onclick="addNumber(1)">1</button></div>
+                <div class="button numberButton"> <button onclick="addNumber(2)">2</button></div>
+                <div class="button numberButton"> <button onclick="addNumber(3)">3</button></div>
+				
+                <div class="button"> <button onclick="applyOperation('-')">-</button></div>
+				
+                <div class="button" id="equalButton"> <button  onclick="calculate()">=</button></div>
+				
+                <div class="button" id="zeroButton"> <button  onclick="addNumber(0)">0</button></div>
+				
+                <div class="button"> <button onclick="addDot()">.</button></div>
+				
+                <div class="button"> <button onclick="applyOperation('+')">+</button></div>
+            </div>
+        </div>
+        <script src="9.js"></script>
+    </body>
+</html>
